@@ -67,7 +67,7 @@ form select {
   padding: 0.5em;
   font-size: 1em;
 }
-#gender{
+#gender {
   width: 15.5em;
   height: 4.7em;
 }
@@ -86,14 +86,14 @@ form button {
   background: rgb(148, 224, 235);
 }
 
-.class_row{
+.class_row {
   display: flex;
   flex-direction: column;
   align-items: self-start;
   justify-content: flex-start;
 }
 .activity_level select {
-  width: 31em;
+  width: 31rem;
   height: 4.4em;
 }
 .password input {
@@ -101,6 +101,117 @@ form button {
   height: 3em;
 }
 
+/* css media query for small phne for size */
+
+@media (max-width: 450px) {
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  body {
+    background: rgb(208, 238, 208);
+  }
+  .header_two {
+    display: none;
+  }
+  header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    width: 20rem;
+    margin: 2em auto;
+  }
+  header p {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 1.4em;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 25em;
+    margin: 5em auto;
+    background: #f7f3f3;
+    max-width: 17rem;
+    padding: 1.5em;
+    border-radius: 15px;
+  }
+  .form_container {
+    width: 100%;
+
+    background: #f7f3f3;
+    max-width: 25rem;
+    margin: 5em auto;
+    padding: 5em;
+    border-radius: 15px;
+  }
+
+  form label,
+  form button {
+    margin: 0.7em auto;
+    margin-left: 1em;
+  }
+  form div {
+    margin: 0.7em auto;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+  }
+  form input,
+  form select {
+    width: 15em;
+    height: 5em;
+    border-radius: 15px;
+    border: none;
+    padding: 0.5em;
+    font-size: 1em;
+    margin-top: 1em;
+  }
+  #gender {
+    width: 15.5em;
+    height: 4.7em;
+  }
+
+  ::placeholder {
+    padding: 1em;
+  }
+  form button {
+    width: 18em;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.8em;
+    border-radius: 10px;
+    border: none;
+    height: auto;
+    background: rgb(148, 224, 235);
+  }
+
+  .class_row {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: flex-start;
+  }
+  .activity_level select {
+    width: 15.5rem;
+    height: 4.4em;
+  }
+  .password input {
+    width: 15.5rem;
+    height: 3em;
+  }
+}
+
+/* css media qury for tablet size */
 @media (min-width: 768px) {
   body {
     display: flex;

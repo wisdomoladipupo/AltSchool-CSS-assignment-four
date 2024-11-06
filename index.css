@@ -193,6 +193,7 @@ form button {
     border-radius: 10px;
     border: none;
     height: auto;
+    margin-left: -1em;
     background: rgb(148, 224, 235);
   }
 

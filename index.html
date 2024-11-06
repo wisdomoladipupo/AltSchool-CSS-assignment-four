@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Index</title>
+  </head>
+  <body>
+    <header class="header_one">
+      <img src="assets/images/image.png" alt="website logo" />
+      <h1>For individuals</h1>
+      <p>
+        Inpsiring wholesome harmony for the mind body and spirit , for everyone,
+        everywhere
+      </p>
+    </header>
+    <header class="header_two">
+      <img src="assets/images/image.png" alt="website logo" />
+      <h1>For individuals</h1>
+      <p>
+        Start benefiting from the wellness experience,for companies looking on
+        increasing productivity,and improving organization wellness
+      </p>
+    </header>
+    <main>
+      <form>
+        <div>
+          <label for="first_name">
+            First name
+            <input type="text" id="first_name" placeholder="first name" />
+          </label>
+          <label for="last_name">
+            Last name
+            <input type="text" id="last_name" placeholder="last name" />
+          </label>
+        </div>
+
+        <div>
+          <label for="date">
+            Date
+            <input type="date" id="date" placeholder="date" />
+          </label>
+          <label for="gender">
+            Gender
+            <select name="gender" id="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="rather not say">Rather not say</option>
+            </select>
+          </label>
+        </div>
+
+        <div>
+          <label for="weigth">
+            Enter weigth
+            <input type="text" id="weigth" placeholder="weigth" />
+          </label>
+          <label for="heigth">
+            Enter height here
+            <input type="text" id="heigth" placeholder="heigth" />
+          </label>
+        </div>
+
+        <div class="last_row">
+          <label class="activity_level" for="activity_level">
+            <select name="activity_level" id="activity_level" aria-placeholder="activity level">
+              <option value="high">High</option>
+              <option value="low">Low</option>
+              <option value="mediium">Medium</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="last_row">
+          <label class="password" for="password">
+            Password
+            <input type="text" id="password" placeholder="password" />
+          </label>
+        </div>
+
+        <div>
+          <button class="register">Register</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

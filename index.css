@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: rgb(208, 238, 208);
+}
+.header_two {
+  display: none;
+}
+header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  width: 20rem;
+  margin: 2em auto;
+}
+header p {
+  font-size: 0.9rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 25em;
+  margin: 5em auto;
+  background: #f7f3f3;
+  max-width: 17rem;
+  border-radius: 15px;
+}
+.form_container {
+  width: 100%;
+
+  background: #f7f3f3;
+  max-width: 25rem;
+  margin: 5em auto;
+  padding: 5em;
+  border-radius: 15px;
+}
+
+form label,
+form button {
+  margin: 0.7em auto;
+}
+form div {
+  margin: 0.7em auto;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+form input,
+form select {
+  width: 15em;
+  height: 5em;
+  border-radius: 15px;
+  border: none;
+  padding: 0.5em;
+  font-size: 1em;
+}
+#gender{
+  width: 15.5em;
+  height: 4.7em;
+}
+
+::placeholder {
+  padding: 1em;
+}
+form button {
+  width: 18em;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.8em;
+  border-radius: 10px;
+  border: none;
+  height: auto;
+  background: rgb(148, 224, 235);
+}
+
+.class_row{
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: flex-start;
+}
+.activity_level select {
+  width: 31em;
+  height: 4.4em;
+}
+.password input {
+  width: 30em;
+  height: 3em;
+}
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    align-items: center;
+  }
+  .header_one {
+    display: none;
+  }
+  .header_two {
+    display: block;
+    width: 40em;
+  }
+  header p {
+    font-size: 1em;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 3em;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f7f3f3;
+    max-width: 120em;
+    padding: 7em;
+    border-radius: 15px;
+    align-self: flex-start;
+    margin-right: 5em;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  form label,
+  form button {
+    margin: 0.7em auto;
+  }
+  form div {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    width: 15em;
+    margin: 1em auto;
+  }
+  ::placeholder {
+    padding: 1em;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+  }
+  form input,
+  form select {
+    width: 15em;
+    height: 3.5em;
+    border-radius: 10px;
+    border: 1px solid #2b2929;
+    padding: 0.5em;
+    padding-left: 0.3em;
+    font-size: 1em;
+  }
+
+  form label {
+    margin: 0.5em 0.5em 0.8em 0.7em;
+  }
+  form button {
+    width: 105em;
+    height: 5em;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 1.5em;
+    border-radius: 10px;
+    border: none;
+    height: auto;
+    background: rgb(148, 224, 235);
+  }
+  .activity_level select {
+    width: 31em;
+    height: 4.4em;
+  }
+  .password input {
+    width: 30em;
+    height: 3em;
+  }
+}

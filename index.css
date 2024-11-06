@@ -169,12 +169,13 @@ form button {
   form input,
   form select {
     width: 15em;
-    height: 5em;
+    height: 4em;
     border-radius: 15px;
     border: none;
     padding: 0.5em;
     font-size: 1em;
     margin-top: 1em;
+    margin-left: -1em;
   }
   #gender {
     width: 15.5em;
@@ -204,10 +205,12 @@ form button {
   .activity_level select {
     width: 15.5rem;
     height: 4.4em;
+    margin-left: -1em
   }
   .password input {
-    width: 15.5rem;
+    width: 15rem;
     height: 3em;
+    margin-left: -1em
   }
 }
 

@@ -4,6 +4,27 @@
   font-family: "Open Sans", sans-serif;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5em;
+  background: #ffc624;
+}
+nav svg {
+  width: 3em;
+  height: 3em;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+nav ul li {
+  color: #f7f3f3;
+}
 body {
   background: rgb(208, 238, 208);
 }
@@ -206,12 +227,12 @@ form button {
   .activity_level select {
     width: 15.5rem;
     height: 4.4em;
-    margin-left: -1em
+    margin-left: -1em;
   }
   .password input {
     width: 15rem;
     height: 3em;
-    margin-left: -1em
+    margin-left: -1em;
   }
 }
 

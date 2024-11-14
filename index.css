@@ -13,6 +13,33 @@ nav {
   background: #ffc624;
 }
 
+.navList {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  justify-content: center;
+  align-items: center;
+  background: #ffc624;
+  height: 15em;
+  margin-top: 4em;
+  display: none;
+  animation: drop 5s both;
+  transition: all ease-in-out;
+}
+
+@keyframes drop {
+  from{
+    transform: none;
+    opacity: 0;
+  }
+  20%{
+    opacity: 0.5;
+  }
+  50%, to {
+    transform: translateY(1em);
+    opacity: 1;
+  }
+}
 svg {
   position: fixed;
   top: 1em;
@@ -24,7 +51,9 @@ svg {
 nav ul {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  gap: 3em;
+  justify-content: center;
+  align-items: center;
   list-style-type: none;
   align-items: center;
   height: 4em;
@@ -32,12 +61,20 @@ nav ul {
 }
 
 nav ul li {
+  display: flex;
+  
+  justify-content: center;
   font-weight: bold;
   color: #f7f3f3;
   text-shadow: 2px 2px #837d7d;
   font-size: 1.5em;
+  margin: 0 auto;
 }
 
+nav ul li a{
+  text-decoration: none;
+  color: white;
+}
 body {
   background: rgb(208, 238, 208);
 }
@@ -59,6 +96,9 @@ header p {
 h1 {
   font-weight: bold;
   font-size: 1.4em;
+}
+main {
+  margin-top: 2em;
 }
 form {
   display: flex;
@@ -263,7 +303,107 @@ form button {
     display: flex;
     align-items: center;
   }
+  nav ul {
+    background: #ffc624;
+    height: 5em;
+  }
+  .header_one {
+    display: none;
+  }
+  .header_two {
+    display: block;
+    width: 40em;
+  }
+  header p {
+    font-size: 1em;
+  }
 
+  h1 {
+    font-weight: bold;
+    font-size: 3em;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f7f3f3;
+    max-width: 120em;
+    padding: 7em;
+    border-radius: 15px;
+    align-self: flex-start;
+    margin-right: 5em;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  form label,
+  form button {
+    margin: 0.7em auto;
+  }
+  form div {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    width: 15em;
+    margin: 1em auto;
+  }
+  ::placeholder {
+    padding: 1em;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+  }
+  form input,
+  form select {
+    width: 15em;
+    height: 3.5em;
+    border-radius: 10px;
+    border: 1px solid #2b2929;
+    padding: 0.5em;
+    padding-left: 0.3em;
+    font-size: 1em;
+  }
+
+  form label {
+    margin: 0.5em 0.5em 0.8em 0.7em;
+  }
+  form button {
+    width: 105em;
+    height: 5em;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 1.5em;
+    border-radius: 10px;
+    border: none;
+    height: auto;
+    background: rgb(148, 224, 235);
+  }
+  .activity_level select {
+    width: 31em;
+    height: 4.4em;
+  }
+  .password input {
+    width: 30em;
+    height: 3em;
+  }
+}
+
+/* csss  for desktop screens */
+
+@media only screen and(max-width: 600px) {
+  body {
+    display: flex;
+    align-items: center;
+  }
+  nav ul {
+  }
+  .navList {
+    background: #ffc624;
+    height: 15em;
+  }
   .header_one {
     display: none;
   }
